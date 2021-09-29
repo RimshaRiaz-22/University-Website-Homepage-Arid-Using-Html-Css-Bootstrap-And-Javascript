@@ -1,0 +1,618 @@
+body {
+    background: #E7E7EF url("images/bg.jpg") repeat;
+}
+
+/*header*/
+#gradientt {
+    height: 106px;
+    padding: 0px 9px;
+    background-color: green;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(lightgreen, white);
+    margin-left: 181px;
+    margin-right: 202px;
+}
+
+.flex-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.flex-container>div {
+    color: black;
+    text-align: left;
+    line-height: 20px;
+    margin-left: 0px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ul li::before {
+    content: "\25AA";
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+ul li a:hover {
+    color: green;
+    font-weight: bold;
+}
+
+/*end header*/
+/*navbar*/
+.navbar {
+    display: block;
+    /*overflow: hidden;*/
+    background-color: #085928;
+    margin-top: 0px;
+    margin-left: 62px;
+    margin-right: 82px;
+    justify-content: center;
+    margin-bottom: 0px;
+    min-height: 14px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin: 0 59px;
+    width: 965px;
+    height: 31px;
+    padding-left: 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar a {
+    background-color: #085928;
+    color: white;
+    padding: 0px 4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+}
+
+/* Change color on hover */
+/*.navbar a:hover {
+background-color: #7A9550;
+color: black;
+}*/
+/*Dropdown */
+.dropbtn {
+    background-color: #085928;
+    ;
+    color: white;
+    padding: 0px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+}
+
+.dropbtn:hover {
+    background-color: #7A9550;
+    color: black;
+    display: block;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+.dropdown {
+    float: left;
+    /*overflow: hidden;*/
+    display: block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    z-index: 101;
+    margin-top: 26px;
+    padding: 0px 0px;
+
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 0px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-top: 1px;
+    margin-bottom: 0px;
+
+
+}
+
+.dropdown-content a:hover {
+    background-color: #7A9550;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    /* new */
+    width: 100%;
+}
+
+.dropdown:hover {
+    background-color: #3e8e41;
+}
+
+/*end navbar*/
+/*slider*/
+h1 {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 11px 29px;
+    margin: 28px 83px -39px -70px;
+}
+
+#demo2 {
+    padding: 0px 61px;
+    margin-right: 21px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    z-index: -150;
+
+}
+
+.sliderimg {
+    position: relative;
+    z-index: 1;
+    width: 980px;
+    height: 373px;
+}
+
+/*3rd row 3 column div-*/
+.column {
+    float: left;
+    padding: 10px;
+    height: 896px;
+    /* Should be removed. Only for demonstration */
+}
+
+
+.row :after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    width: 25%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+
+}
+
+/* Main column */
+.main {
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.fill1 {
+    height: 0%;
+    min-height: 601px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-color: #f1f1f1;
+}
+
+.fill {
+    /*height:100%;*/
+    height: 0%;
+    /* min-height:400px;*/
+    min-height: 601px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-color: #f1f1f1;
+}
+
+.slide-wrapper {
+    display: inline;
+}
+
+.slide-wrapper .container {
+    padding: 0;
+}
+
+
+/*------------------------------ vertical bootstrap slider----------------------------*/
+
+.carousel-inner>.carousel-item.carousel-item-next,
+.carousel-inner>.carousel-item.active.carousel-item-right {
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    top: 0;
+
+}
+
+.carousel-inner>.carousel-item.carousel-item-prev,
+.carousel-inner>.carousel-item.active.carousel-item-left {
+    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    -moz-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    top: 0;
+
+}
+
+.carousel-inner>.carousel-item.next.carousel-item-left,
+.carousel-inner>.carousel-item.carousel-item-prev.carousel-item-right,
+.carousel-inner>.carousel-item.active {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    ;
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    top: 0;
+
+}
+
+/*------------------------------- vertical carousel indicators ------------------------------*/
+.carousel-indicators {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    right: 10px;
+    left: auto;
+    width: auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.carousel-indicators li {
+    display: block;
+    margin-bottom: 5px;
+    border: 1px solid white;
+
+}
+
+.carousel-indicators li.active {
+    margin-bottom: 5px;
+    background: white;
+
+}
+
+.llink {
+    height: 13px;
+    font-size: 12px;
+}
+
+.llink:hover {
+    font-weight: bold;
+    color: green;
+}
+
+.container {
+    width: 197px;
+}
+
+
+/*text carousal*/
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.carousel-control {
+    width: 8%;
+    width: 0px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    margin-right: 40px;
+    margin-left: 32px;
+    background-image: none;
+    opacity: 1;
+}
+
+.carousel-control>a>span {
+    color: white;
+    font-size: 29px !important;
+}
+
+.carousel-col {
+    position: relative;
+    min-height: 1px;
+    padding: 5px;
+    float: left;
+}
+
+.active>div {
+    display: none;
+}
+
+.active>div:first-child {
+    display: block;
+}
+
+/*xs*/
+@media (max-width: 767px) {
+    .carousel-inner .active.left {
+        left: -50%;
+    }
+
+    .carousel-inner .active.right {
+        left: 50%;
+    }
+
+    .carousel-inner .next {
+        left: 50%;
+    }
+
+    .carousel-inner .prev {
+        left: -50%;
+    }
+
+    .carousel-col {
+        width: 50%;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+}
+
+/*sm*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-inner .active.left {
+        left: -50%;
+    }
+
+    .carousel-inner .active.right {
+        left: 50%;
+    }
+
+    .carousel-inner .next {
+        left: 50%;
+    }
+
+    .carousel-inner .prev {
+        left: -50%;
+    }
+
+    .carousel-col {
+        width: 50%;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+}
+
+/*md*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .carousel-inner .active.left {
+        left: -33%;
+    }
+
+    .carousel-inner .active.right {
+        left: 33%;
+    }
+
+    .carousel-inner .next {
+        left: 33%;
+    }
+
+    .carousel-inner .prev {
+        left: -33%;
+    }
+
+    .carousel-col {
+        width: 33%;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div {
+        display: block;
+    }
+}
+
+/*lg*/
+@media (min-width: 1200px) {
+    .carousel-inner .active.left {
+        left: -25%;
+    }
+
+    .carousel-inner .active.right {
+        left: 25%;
+    }
+
+    .carousel-inner .next {
+        left: 25%;
+    }
+
+    .carousel-inner .prev {
+        left: -25%;
+    }
+
+    .carousel-col {
+        width: 25%;
+    }
+
+    .active>div:first-child+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div {
+        display: block;
+    }
+
+    .active>div:first-child+div+div+div {
+        display: block;
+    }
+}
+
+.block {
+    width: 306px;
+    height: 140px;
+}
+
+.red {
+    background-color: white;
+}
+
+.blue {
+    background-color: white;
+}
+
+.green {
+    background-color: white;
+}
+
+.yellow {
+    background-color: white;
+}
+
+h4 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+/*table flex*/
+.headd {
+    color: white;
+    background-color: green;
+    padding: 9px 14px;
+    margin-right: 0px;
+}
+
+td {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+
+}
+
+th {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+tr {
+    padding: 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+/*slider last*/
+
+.multi-item-carousel>.carousel-inner>.item {
+    transition: 500ms ease-in-out left;
+}
+
+#gradient3 {
+    height: 134px;
+    padding: 0px 95px;
+    /*background-color: skyblue; /* For browsers that do not support gradients */
+    /* background-image: linear-gradient(skyblue, white);*/
+    background: url("images/gallery_ltbg.gif") repeat-x;
+    width: 947px;
+}
+
+.img-responsive {
+    width: 309px;
+    height: 113px;
+    padding: 21px 0px;
+    padding-bottom: 0px;
+}
+
+.IMG {
+    width: 237px;
+    height: 97px;
+}
+
+.vl {
+    border-left: 2px solid white;
+    height: 17px;
+}
+
+#hhh:hover {
+    background-color: #7A9550;
+    color: black;
+}
+
+#hhh1:hover {
+    background-color: #7A9550;
+    color: black;
+}
+
+#hhh2:hover {
+    background-color: #7A9550;
+    color: black;
+}
+
+#hhh3:hover {
+    background-color: #7A9550;
+    color: black;
+}
+
+#hhh4:hover {
+    background-color: #7A9550;
+    color: black;
+}
+
+#hhh5:hover {
+    background-color: #7A9550;
+    color: black;
+}
+
+#hhh6:hover {
+    background-color: #7A9550;
+    color: black;
+}
+
+#hhh7:hover {
+    background-color: #7A9550;
+    color: black;
+}
+
+#hhh9:hover {
+    background-color: #7A9550;
+    color: black;
+}
